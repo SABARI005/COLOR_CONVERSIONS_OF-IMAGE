@@ -212,7 +212,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/fbbe8f32-2116-406e-ac83-ea61cf50c2e8)
+![Screenshot 2024-09-28 154850](https://github.com/user-attachments/assets/9c6526ca-23d5-474c-a668-572d1e20b64d)
+
 
 ### vi)Image Cropping
 ```py
@@ -238,22 +239,23 @@ plt.axis('off')
 plt.show()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/c9c8d77b-eac3-4e8a-8f0e-114669fe2ef5)
+
+![Screenshot 2024-09-28 155503](https://github.com/user-attachments/assets/f5607149-1b0e-44c3-81a6-6fef4db06455)
 
 
 (2) Flip the original image vertically and display it.
 ```py
-img = cv2.imread("wallpaper.jpg")
-img = cv2.resize(img,(400,400))
-res=cv2.rotate(img,cv2.ROTATE_90_CLOCKWISE)
-# Display the HSV image
-cv2.imshow('Original',img)
-cv2.imshow('Image Window', res)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
+image = cv2.imread("image.jpg")
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+image=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
+plt.imshow(image)
+plt.axis('off')
+plt.show()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/2d7ebe52-7ef3-4614-83fa-3391c6394273)
+![image](https://github.com/user-attachments/assets/0996857a-71de-42e0-a6ab-b12bdcb3906f)
+
 
 ### viii)Write and Save the Modified Image
 ```py
