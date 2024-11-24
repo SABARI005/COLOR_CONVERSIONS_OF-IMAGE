@@ -119,6 +119,8 @@ plt.axis('off')
 plt.show()
 ```
 ### Output
+![image](https://github.com/user-attachments/assets/b1da0f04-119e-46e4-b2c4-5941e60528eb)
+
 
 
 (4) Add the text "OpenCV Drawing" at the top-left corner of the image.
